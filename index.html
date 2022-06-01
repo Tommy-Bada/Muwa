@@ -14,13 +14,13 @@
         </div>
         <nav>
             <ul>
-                <li>About</li>
-                <li>Pricing</li>
-                <li>FAQs</li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">FAQs</a></li>
             </ul>
         </nav>
         <div>
-            <button id="header-button">Try for Free</button>
+            <a href="#"><button id="header-button">Try for Free</button></a>
         </div>
     </header>
     <hr>
@@ -29,11 +29,13 @@
         <h1>Your Register + Account Book in one place</h1>
         <p>Keep record of every student and their fee payment,
             while worrying less</p>
-        <button id="section-1-button">Start Free Trial</button>
-        <div id="demo-play">
-            <p>Watch demo</p>
-            <div><img src="Images/Polygon 1.svg" alt="play button"/></div>
-        </div>
+        <a href="#"><button id="section-1-button">Start Free Trial</button></a>
+        <a href="#" >
+            <div id="demo-play">
+                <p>Watch demo</p>
+                <div><img src="Images/Polygon 1.svg" alt="play button"/></div>
+            </div>
+        </a>
         <div><img src="Images/Desktop - 1.png" alt="product image" /></div>
     </section>
 
@@ -131,12 +133,35 @@
                     </div>
                 </div>
             </div>
+            <div class="section-3-grid-2-box">
+                <div><img src="Images/“.svg" alt="quote" /></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae dui nec urna consequat consectetur id ut risus. Curabitur rhoncus lectus non sem pellentesque elementum. Cras feugiat pretium quam.</p>
+                <div class="profile">
+                    <div><img src="Images/Image.png" alt="" /></div>
+                    <div>
+                        <p class="profile-text-1">Rebecca Ortiz</p>
+                        <p class="profile-text-2">Principal, Queensland Priv. School.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-3-grid-2-box">
+                <div><img src="Images/“.svg" alt="quote" /></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae dui nec urna consequat consectetur id ut risus. Curabitur rhoncus lectus non sem pellentesque elementum. Cras feugiat pretium quam.</p>
+                <div class="profile">
+                    <div><img src="Images/Image.png" alt="" /></div>
+                    <div>
+                        <p class="profile-text-1">Rebecca Ortiz</p>
+                        <p class="profile-text-2">Principal, Queensland Priv. School.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="section-4">
         <p id="section-4-text-1">Pricing</p>
         <p id="section-4-text-2">Prices curated for your need</p>
         <div id="section-4-grid">
+            <a href="#">
             <div class="pricing-box">
                 <p class="pricing-box-text-1">Free</p>
                 <p class="pricing-box-text-2">$0</p>
@@ -146,12 +171,31 @@
                     <li>Per Session fro lorem ipsum</li>
                     <li>Per Session fro lorem ipsum</li>
                 </ul>
-                <button class="pricing-button">Choose Plan</button>
+                <button class="pricing-button">Start Free Trial</button>
             </div>
+            </a>
+
+            <a href="#">
             <div class="pricing-box">
                 <p class="pricing-box-text-1">Free</p>
-                <p class="pricing-box-text-2">$0</p>
-                <p class="pricing-box-text-3">For 7-days</p>
+                <p class="pricing-box-text-2">$95</p>
+                <p class="pricing-box-text-3">Per Session</p>
+                <ul class="pricing-list">
+                    <li>Per Session fro lorem ipsum</li>
+                    <li>Per Session fro lorem ipsum</li>
+                    <li>Per Session fro lorem ipsum</li>
+                    <li>Per Session fro lorem ipsum</li>
+                    <li>Per Session fro lorem ipsum</li>
+                </ul>
+                <button class="pricing-button">Choose Plan</button>
+            </div>
+            </a>
+
+            <a href="#">
+            <div class="pricing-box">
+                <p class="pricing-box-text-1">Free</p>
+                <p class="pricing-box-text-2">$35</p>
+                <p class="pricing-box-text-3">Per Semester</p>
                 <ul class="pricing-list">
                     <li>Per Session fro lorem ipsum</li>
                     <li>Per Session fro lorem ipsum</li>
@@ -159,24 +203,14 @@
                 </ul>
                 <button class="pricing-button">Choose Plan</button>
             </div>
-            <div class="pricing-box">
-                <p class="pricing-box-text-1">Free</p>
-                <p class="pricing-box-text-2">$0</p>
-                <p class="pricing-box-text-3">For 7-days</p>
-                <ul class="pricing-list">
-                    <li>Per Session fro lorem ipsum</li>
-                    <li>Per Session fro lorem ipsum</li>
-                    <li>Per Session fro lorem ipsum</li>
-                </ul>
-                <button class="pricing-button">Choose Plan</button>
-            </div>
+            </a>
         </div>
     </section>
     <section id="section-5">
         <div>
             <p id="section-5-text-1">Muwa is the Solution!</p>
             <p id="section-5-text-2">Manage your students and their fees with Muwa</p>
-            <button>Start free trial</button>
+            <a href="#"><button>Start free trial</button></a>
         </div>
     </section>
     <footer>
@@ -184,23 +218,24 @@
             <p>Subscribe to our newsletter</p>
             <div id="footer-form">
             <div><input id="footer-input" type="email" placeholder="Enter your email" name="email" /></div>
-            <div><img src="Images/Right 2.svg" alt="submit icon"/></div>
+            <div><a href="#"><img id="subscribe-icon" src="Images/Right 2.svg" alt="submit icon"/></a></div>
             </div>
             <div id="socials">
-                <div><img src="Images/Facebook.svg" alt="" /></div>
-                <div><img src="Images/Instagram.svg" alt="" /></div>
-                <div><img src="Images/Twitter.svg" alt="" /></div>
+                <div><a href="#"><img class="social-media-icon" src="Images/Facebook.svg" alt="logo of Facebook" /></a></div>
+                <div><a href="#"><img class="social-media-icon" src="Images/Instagram.svg" alt="logo of Instagram" /></a></div>
+                <div><a href="#"><img class="social-media-icon" src="Images/Twitter.svg" alt=" logo of Twitter" /></a></div>
             </div>
         </div>
         <div id="footer-right">
             <ul>
-                <li>Features</li>
-                <li>Contact</li>
-                <li>About</li>
-                <li>FAQs</li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">FAQs</a></li>
             </ul>
             <p>© 2021 Muwa. All Rights reserved</p>
         </div>
     </footer>
+<script src="muwa.js"></script>
 </body>
 </html>
