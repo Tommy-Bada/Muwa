@@ -150,17 +150,19 @@ h1{
     color: #656565;
 }
 #section-3-grid-2{
-    display: grid;
-    grid-template-columns: 35rem 35rem 35rem 35rem 35rem 35rem ;
-    column-gap: 3rem;
-    overflow-x: hidden;
+    display: flex ;
+    overflow-x: auto;
+}
+#section-3-grid-2::-webkit-scrollbar{
+    width: 0;
 }
 .section-3-grid-2-box{
+    min-width: 30rem;
     border: 1px solid #e2e2e2;
     padding: 3rem;
     text-align: left;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 .section-3-grid-2-box>div{
     text-align: left;
