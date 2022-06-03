@@ -43,6 +43,10 @@ nav>ul>li>a:hover{
     border: 1px solid #31286A ;
     cursor: pointer;
 }
+#hamburger-menu{
+    position: absolute;
+    display: none;
+}
 
 
 /* Main Section */
@@ -86,6 +90,12 @@ h1{
 #demo-play:hover{
     cursor: pointer;
 }
+#demo-play-button{
+    width:0.8rem;
+}
+#main-image{
+    width: 94rem;
+}
 
 /* Section-2 */
 #section-2{
@@ -109,6 +119,9 @@ h1{
 }
 .section-2-grid-box{
     text-align: left;
+}
+.section-2-grid-icon{
+    width:6.3rem;
 }
 .section-2-grid-header{
     text-align: left;
@@ -137,6 +150,7 @@ h1{
 }
 #section-3-grid-1{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 3rem 15rem 15rem 15rem;
 }
@@ -174,6 +188,9 @@ h1{
     font-size: 1.4rem;
     color: #656565;
 }
+.qoute-icon{
+    width:2rem;
+}
 .profile{
     display: flex;
     align-items: center;
@@ -204,6 +221,7 @@ h1{
 }
 #section-4-grid{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 :root {
@@ -301,6 +319,7 @@ h1{
 /*Footer*/
 footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: white;
     padding: 4.5rem 15rem;
@@ -369,4 +388,179 @@ footer{
     text-align: right;
     margin-top: 12rem;
     color: #656565;
+}
+
+/* Moile View */
+@media (max-width: 768px){
+    *{
+        font-size: 8px;
+    }
+
+
+
+
+    /*Nav Bar */
+    header{
+        display: block;
+        padding: 0 ;
+    }
+    #logo img{
+        width: 90px;
+        position: relative;
+        right: 200;
+    }
+    nav ul{
+        background-color: white;
+    }
+    nav>ul>li{
+        display: block;
+        margin-top: 2rem;
+    }
+    #header-button-background{
+        background-color: white;
+    }
+    #hamburger-menu{
+        position: relative;
+        bottom: 160;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+    .hamburger-line{
+        background-color: black;
+        height: 4px;
+        width: 30px;
+        border-radius: 5px;
+        transition: all .4s ease-in-out;       
+    }
+    .hamburger-line::before,
+    .hamburger-line::after{
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        border-radius: 5px;
+        background-color: black;
+        transition: all .4s ease-in-out;
+    }
+    .hamburger-line::before{
+        transform: translate(-15px,-8px);
+    }
+    .hamburger-line::after{
+        transform: translate(-15px, 8px);
+    }
+    #hamburger-menu.open .hamburger-line{
+        transform: translateX(-20px);
+        background-color: transparent;
+    }
+    #hamburger-menu.open .hamburger-line::before{
+        transform: rotate(45deg) ;
+    }
+    #hamburger-menu.open .hamburger-line::after{
+        transform: rotate(-45deg);
+    }
+
+
+
+
+    /* Main Section */
+    #section-1{
+        padding: 3rem 5rem;
+    }
+    h1{
+        color:#31286A;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    #section-1>p{
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+        width:40rem;
+    }
+    #demo-play{
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    #demo-play>p{
+        font-size: 1.4rem;
+        color: #0f0f0f;
+        transition: all 0.3s ease-in;
+    }
+    #main-image{
+        width: 50rem;
+    }
+
+
+
+    /* Section-2 */
+    #section-2{
+        padding: 3rem 5rem;
+    }
+    #section-2-grid{
+        margin-top: 3rem;
+        grid-template-columns: 45% 45%;
+        column-gap: 4rem;
+        row-gap: 4rem;
+    }
+    .section-2-grid-box{
+        width: 50vw;
+    }
+    .section-2-grid-text{
+        width: 80%;
+    }
+    
+    /* Section-3 */
+    #section-3{
+        padding-top: 3rem 5rem;
+    }
+    #section-3-text-1{
+        width:40rem;
+    }
+    #section-3-grid-1{
+        margin: 2rem 4rem 4rem 4rem;
+    }
+    .section-3-grid-2-box{
+        width: 20rem;
+        margin-left: 2rem;
+    }
+    
+
+
+
+    /*Section-4*/
+    #section-4{
+        padding: 5rem auto;
+    }
+    
+
+
+    
+    /*Section 5*/
+    #section-5{
+        padding: 3rem 5rem;
+    }
+
+
+
+
+    /*Footer*/
+    footer{
+        justify-content: center;
+        padding: 3rem 5rem;
+    }
+    #socials{
+        width: 6rem;
+    }
+    #footer-right{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    #footer-right>p{
+        font-size: 1.4rem;
+        text-align:center;
+        margin-top: 2rem;
+        color: #656565;
+    }
 }
