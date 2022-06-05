@@ -505,8 +505,8 @@ footer{
     #section-2-grid{
         margin-top: 3rem;
         grid-template-columns: 45% 45%;
-        column-gap: 4rem;
-        row-gap: 4rem;
+        column-gap: 2rem;
+        row-gap: 2rem;
     }
     .section-2-grid-box{
         width: 40vw;
