@@ -407,27 +407,41 @@ footer{
 @media (max-width: 768px){
     /*Nav Bar */
     header{
-        display: block;
-        padding: 0 ;
+        display: flex;
+        padding: 2rem ;
     }
     #logo img{
         width: 90px;
-        position: relative;
-        right: 200;
     }
-    nav ul{
-        background-color: white;
+    #navbar.navBarOpen{ 
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+    #navbar{
+        top:100;
+        opacity: 0;
+        position: absolute;
+        margin-left: -2rem;
+        width:100%;
+        height: 100vh;
+        background-color:white;
+        z-index: 1;
+        transform: translateY(100vh);
+        transition: opacity,transform 0.3s ease-in;
+        /*-webkit-transition: transform 1s ease-in;
+        -moz-transition: transform 1s ease-in;
+        -o-transition: transform 1s ease-in;
+        -ms-transition: transform 1s ease-in;*/
     }
     nav>ul>li{
         display: block;
         margin-top: 2rem;
     }
     #header-button-background{
-        background-color: white;
+        display: none;
     }
     #hamburger-menu{
         position: relative;
-        bottom: 160;
         float: right;
         display: flex;
         justify-content: center;
