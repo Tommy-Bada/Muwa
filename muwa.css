@@ -482,7 +482,7 @@ footer{
     }
     #section-1>p{
         margin-bottom: 3rem;
-        width:80%;
+        width:90%;
     }
     #demo-play{
         margin-top: 2.5rem;
@@ -509,7 +509,7 @@ footer{
         row-gap: 4rem;
     }
     .section-2-grid-box{
-        width: 45vw;
+        width: 40vw;
     }
     .section-2-grid-text{
         width: 80%;
