@@ -487,7 +487,7 @@ footer{
 
     /* Main Section */
     #section-1{
-        padding: 3rem 2rem;
+        padding: 3rem 2rem 0 2rem;
     }
     h1{
         color:#31286A;
@@ -530,6 +530,9 @@ footer{
     #section-3-grid-1{
         margin: 3rem auto;
     }
+    #section-3-grid-1>div{
+        margin-bottom: 1rem;
+    }
     .section-3-grid-2-box{
         min-width:60vw;
         margin-left: 2rem;
@@ -546,7 +549,7 @@ footer{
         display: block;
     }
     .pricing-box{
-        width: 55%;
+        width: 60%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 2rem;
@@ -554,6 +557,9 @@ footer{
     .pricing-box:hover{
         margin-left:auto;
         margin-right: auto;
+    }
+    .pricing-button{
+    padding: 1rem 2rem;
     }
     
     
@@ -567,6 +573,9 @@ footer{
     #section-5>div{
         border-radius: 2rem;
         padding: 2rem;
+    }
+    #section-5>div>a>button{
+        padding: 1rem 2rem;
     }
 
 
