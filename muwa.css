@@ -517,7 +517,7 @@ footer{
         margin: 3rem auto;
     }
     .section-3-grid-2-box{
-        width: 90vw;
+        min-width:60vw;
         margin-left: 2rem;
     }
     
