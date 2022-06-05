@@ -503,15 +503,8 @@ footer{
         padding: 3rem 2rem;
     }
     #section-2-grid{
-        grid-template-columns: 45vw 45vw;
-        column-gap: 1rem;
-        margin-top: 3rem;
-    }
-    .section-2-grid-box{
-        min-width: 45vw;
-    }
-    .section-2-grid-text{
-        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
     }
     
 
